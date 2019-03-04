@@ -60,7 +60,7 @@ print(2**0.5)
 
 
 ###############################################################################
-# TODO: 5.
+# DONE: 5.
 #   Every object has a TYPE and a VALUE.  For example,
 #   for the object that is computed by  math.sqrt(2):
 #      Its TYPE is float  (which is shorthand for "floating point number").
@@ -77,24 +77,50 @@ print(2**0.5)
 #   will print     <class 'float'>
 #   Try it now!
 #   (Just write   print(type(3.14))   below this _TODO_ and run the program.)
-#
+
+print(type(3.14))
+
 #   Now go through the BLAH objects listed below, one by one.  For each:
 #      1. Try to GUESS its TYPE.
 #      2. Then write code of the form   print(type(BLAH)).
-#      3. THen RUN the code to LEARN its TYPE.
+#      3. Then RUN the code to LEARN its TYPE.
 
-#       "hello"
-#       'hello'
-#       'a b c'
-#       3 + 3
-#       "3" + "3"
-#       2 ** 100
-#       2.0 ** 100
-#       math.sin(8)
-#       math.sin
-#       print
-#       math
-#       'math'
+#       "hello" || string
+print(type("hello"))
+
+#       'hello' || string
+print(type('hello'))
+
+#       'a b c' || string
+print(type('a b c'))
+
+#       3 + 3 || integer
+print(type(3+3))
+
+#       "3" + "3" || string
+print(type("3"+"3"))
+
+#       2 ** 100 || integer
+print(type(2**100))
+
+#       2.0 ** 100 || float
+print(type(2.0**100))
+
+#       math.sin(8) || float
+print(type(math.sin(8)))
+
+#       math.sin || method
+print(type(math.sin))
+
+#       print || method
+print(type(print))
+
+#       math || module
+print(type(math))
+
+#       'math' || string
+print(type('math'))
+
 #
 # After you have written and run the code to learn the TYPE
 # of each of the above, change the above _TODO_ to DONE.
