@@ -48,7 +48,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Run this module.  A window will pop up and Turtles will move around.
 #   After the Turtles stop moving,
 #      ** click anywhere in the window to close the window **.
@@ -80,45 +80,45 @@ import rosegraphics as rg
 # The definition of a  TurtleWindow  is in the   rg
 # (shorthand for rosegraphics) module.
 # -----------------------------------------------------------------------------
-window = rg.TurtleWindow()
-window.delay(20)  # Bigger numbers mean slower animation.
-
-# -----------------------------------------------------------------------------
-# The next few lines show how to:
-#   - CONSTRUCT (make) a  SimpleTurtle  object and ASSIGN a NAME to the object.
-# -----------------------------------------------------------------------------
-boris = rg.SimpleTurtle()
-
-# -----------------------------------------------------------------------------
-# The next few lines show how to:
-#   - Ask the SimpleTurtle object to do things by applying METHODs to it.
-# The numbers in the parentheses are called ARGUMENTS.
-# -----------------------------------------------------------------------------
-boris.forward(100)
-boris.left(90)
-boris.forward(200)
-
-# -----------------------------------------------------------------------------
-# The next few lines show how to:
-#   - Construct a second SimpleTurtle,
-#     set its  pen  and  speed  INSTANCE VARIABLES, and ask it to do things.
-# -----------------------------------------------------------------------------
-natasha = rg.SimpleTurtle('turtle')
-natasha.pen = rg.Pen('red', 30)  # Second argument is the Pen's thickness
-natasha.speed = 5  # Bigger means faster, max is usually about 10
-
-natasha.backward(50)
-natasha.right(90)
-natasha.forward(125)
-
-natasha.speed = 1  # Now slower
-natasha.go_to(rg.Point(-100, 200))
+# window = rg.TurtleWindow()
+# window.delay(10)  # Bigger numbers mean slower animation.
+#
+# # -----------------------------------------------------------------------------
+# # The next few lines show how to:
+# #   - CONSTRUCT (make) a  SimpleTurtle  object and ASSIGN a NAME to the object.
+# # -----------------------------------------------------------------------------
+# boris = rg.SimpleTurtle()
+#
+# # -----------------------------------------------------------------------------
+# # The next few lines show how to:
+# #   - Ask the SimpleTurtle object to do things by applying METHODs to it.
+# # The numbers in the parentheses are called ARGUMENTS.
+# # -----------------------------------------------------------------------------
+# boris.forward(100)
+# boris.left(90)
+# boris.forward(200)
+#
+# # -----------------------------------------------------------------------------
+# # The next few lines show how to:
+# #   - Construct a second SimpleTurtle,
+# #     set its  pen  and  speed  INSTANCE VARIABLES, and ask it to do things.
+# # -----------------------------------------------------------------------------
+# natasha = rg.SimpleTurtle('turtle')
+# natasha.pen = rg.Pen('red', 20)  # Second argument is the Pen's thickness
+# natasha.speed = 5  # Bigger means faster, max is usually about 10
+#
+# natasha.backward(100)
+# natasha.right(45)
+# natasha.forward(100)
+#
+# natasha.speed = 1  # Now slower
+# natasha.go_to(rg.Point(-50, 200))
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a few more lines of your own code to make one of the existing
-#   SimpleTurtles move some more and/or have different characteristics.
+#   SimpleTurtles move some more and/or have different characteristics. (I just changed values)
 #
 #      ** Nothing fancy is required. **
 #      ** A SUBSEQUENT exercise will let you show your creativity. **
@@ -129,7 +129,7 @@ natasha.go_to(rg.Point(-100, 200))
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
@@ -151,12 +151,35 @@ natasha.go_to(rg.Point(-100, 200))
 #      ** A SUBSEQUENT exercise will let you show your creativity. **
 #
 #   As always, test by running the module.
-#
+
+window = rg.TurtleWindow()
+window.delay(20)
+
+derek_jeter = rg.SimpleTurtle('turtle')
+derek_jeter.pen = rg.Pen('red',10)
+derek_jeter.speed = 1
+
+derek_jeter.forward(100)
+derek_jeter.right(45)
+derek_jeter.backward(50)
+derek_jeter.left(45)
+derek_jeter.forward(100)
+
+babe_ruth = rg.SimpleTurtle('turtle')
+babe_ruth.pen = rg.Pen('blue',10)
+babe_ruth.speed = 1
+
+babe_ruth.backward(100)
+babe_ruth.left(45)
+babe_ruth.forward(50)
+babe_ruth.right(45)
+babe_ruth.backward(100)
+
 ###############################################################################
 
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #   Run one more time to be sure that all is still OK.
 #
