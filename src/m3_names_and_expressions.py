@@ -146,3 +146,10 @@ print(type('math'))
 #   DO IT FREQUENTLY; AT LEAST once per module.
 #
 ###############################################################################
+
+def f_to_c(fahrenheit):
+    celsius = (fahrenheit - 32) * (5 / 9)
+    return celsius
+
+f_to_c(5)
+
